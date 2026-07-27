@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: rgb(26, 26, 26);
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header > h1#logo{
+    font-family: "Noto Sans JP", sans-serif;
+    color: rgb(255, 212, 95);
+}
+
+header > h1#titulo{
+    font-size: 25px;
+    font-family: "Roboto Serif", serif;
+}
+
+header > nav{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    
+}
+
+header > nav > a:hover{
+    color: rgb(255, 212, 95);
+    transform: scale(1.05); 
+}
+
+main{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > h1{
+    margin: 20px;
+}
+
+main > section {
+    width: 1290px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+}
+
+main > section > a.cards{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+main > section > a.cards:hover{
+    transform: scale(1.05); 
+}
+main > section > a.cards > h3{
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgb(255, 212, 95);
+    border-top-right-radius: 15px ;
+    border-top-left-radius: 15px ;
+}
+
+main > section > a.cards > p{
+    font-size: 15px;
+    padding: 5px;
+}
+
+footer{
+    background-color: rgb(14, 14, 14);
+    color: white;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
